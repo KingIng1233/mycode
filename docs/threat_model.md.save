@@ -1,0 +1,20 @@
+# Threat Model — QS-HAV M
+
+## What We Protect
+- Integrity of strategy definitions via hashing
+- Integrity of trade records via append-only audit log
+- Detection of after-the-fact tampering
+
+## What We Do NOT Protect
+- Strategy secrecy or IP
+- Insider attacks during execution
+- Alpha or profitability
+- Real money or live trading
+
+## Attacker Model
+- Attacker can edit files on disk after the fact
+- Attacker cannot forge valid signatures undetected
+
+## Security Goal
+- Any modification to past records must be detectable
+- Verification must fail if records are al
